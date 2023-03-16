@@ -1,8 +1,7 @@
 import java.util.Arrays;
 
-import javax.swing.plaf.synth.SynthStyleFactory;
 
-public class hw1 {
+public class program {
 
     public static void main(String[] args) {
         System.out.println(isSumBetween10And20(5, 15)); // true
