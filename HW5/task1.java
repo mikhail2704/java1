@@ -76,3 +76,9 @@ public class task1 {
             return true;
         }
     }
+    public static void parasit() {
+        int num0 = 5;
+        if (num0) {
+            
+        }    
+    }
