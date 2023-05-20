@@ -1,4 +1,4 @@
-import pandas as pd
+import itog as pd
 # Создаем DataFrame
 lst = ['robot'] * 10
 lst += ['human'] * 10
