@@ -1,203 +1,28 @@
-{s3_require file="/t/images/mosaic/symbols/symbol-i1fc2x2em_styles.css"}
-<div class='div div--u-i1fc2x2em' id='i1fc2x2em_{$smarty.capture.i1fc2x2em++|default:0}'>
-<div class='div div--u-i3uoyfths' id='i3uoyfths_{$smarty.capture.i3uoyfths++|default:0}'>
-<a href='{if $mc_ig1qz2hkl.page_id == $site.page_id}/{else}{$mc_ig1qz2hkl.href.link|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='link-universal link-universal--u-ig1qz2hkl' id='ig1qz2hkl_{$smarty.capture.ig1qz2hkl++|default:0}' data-do-link_universal='{literal}{"screen":{"type":"link","popup":"none","eventName":"none","eventElement":"self","eventAction":"","selectedTag":"","linkType":"link","blank":false}}{/literal}'>
-<div class='imageFit imageFit--u-iwneqj0du' id='iwneqj0du_{$smarty.capture.iwneqj0du++|default:0}' data-do-image='{literal}{"screen":{"objectFit":"cover","maxWidth":280,"maxHeight":280}}{/literal}'>
-<img data-origin-src='{if $mc_ig1qz2hkl.image.ext == "gif"}{$mc_ig1qz2hkl.image.src}{else}{s3_img src=$mc_ig1qz2hkl.image.filename}{/if}' data-size='{$mc_ig1qz2hkl.image.image_width}x{$mc_ig1qz2hkl.image.image_height}' src='{if $mc_ig1qz2hkl.image.ext == "gif"}{$mc_ig1qz2hkl.image.src}{else}{s3_img src=$mc_ig1qz2hkl.image.filename width="280" height="280" method="resize"}{/if}' alt='{$mc_ig1qz2hkl.alt}' title='{$mc_ig1qz2hkl.title}' class='imageFit__img imageFit__img--u-i630cv3z1' id='i630cv3z1_{$smarty.capture.i630cv3z1++|default:0}' />
-<div class='imageFit__overlay imageFit__overlay--u-iqf3y5p72' id='iqf3y5p72_{$smarty.capture.iqf3y5p72++|default:0}'></div>
-<div class='imageFit__zoom imageFit__zoom--u-ity85bsf5' id='ity85bsf5_{$smarty.capture.ity85bsf5++|default:0}'>
-<span class='svg_image svg_image--u-iaze5zf46' id='iaze5zf46_{$smarty.capture.iaze5zf46++|default:0}' data-do-svg_image='{literal}{"screen":{"stretch":true}}{/literal}'>
-{$mc_ig1qz2hkl.svg_body}
-</span>
-</div>
-</div>
-</a>
-<div class='div div--u-ie5reqrim' id='ie5reqrim_{$smarty.capture.ie5reqrim++|default:0}'>
-<a href='{if $mc_ikvtak419.page_id == $site.page_id}/{else}{$mc_ikvtak419.href.link|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='link-universal link-universal--u-ikvtak419' id='ikvtak419_{$smarty.capture.ikvtak419++|default:0}' data-do-link_universal='{literal}{"screen":{"type":"link","popup":"none","eventName":"none","eventElement":"self","eventAction":"","selectedTag":"","linkType":"link","blank":false}}{/literal}'>
-<div class='text text--u-idbj3yhlg' id='idbj3yhlg_{$smarty.capture.idbj3yhlg++|default:0}'>
-<div class='text-block-wrap-div' >{$mc_ikvtak419.text}</div>
-</div>
-</a>
-{if false}<div class='text text--u-iudtev5jv' id='iudtev5jv_{$smarty.capture.iudtev5jv++|default:0}'>
-<span class='text-block-wrap-div' >{$mc_iudtev5jv.text2}</span>
-</div>
-{/if}</div>
-</div>
-<div class='div div--u-ids412k71' id='ids412k71_{$smarty.capture.ids412k71++|default:0}'>
-{if !empty($mc_ivwdjagbc)}<div class='hor-menu hor-menu--u-ivwdjagbc' id='ivwdjagbc_{$smarty.capture.ivwdjagbc++|default:0}' data-do-menu_horizontal='{literal}{"screen":{"mode":"Popup","cancelForward":false,"more":true,"toLevel":0,"firstClickOpen":false,"delayIn":200,"delayOut":200},"(min-width: 1280px)":{"toLevel":6,"firstClickOpen":false}}{/literal}'>
-<ul class='hor-menu__list hor-menu__list--u-i7van20nq' id='i7van20nq_{$smarty.capture.i7van20nq++|default:0}'>
-{foreach from=$mc_ivwdjagbc item=item_ivwdjagbc key=key_ivwdjagbc name=mc_ivwdjagbc}
-{if $item_ivwdjagbc._level < $mc_ivwdjagbc[$smarty.foreach.mc_ivwdjagbc.iteration]._level}
-    {assign var=has_child value=1}
-{else}
-    {assign var=has_child value=0}
-{/if}
-{if $key_ivwdjagbc > 0}
-    {if $item_ivwdjagbc._level > $prev_level}
-        <ul class='hor-menu__sub_list hor-menu__sub_list--u-i8fn854n0' id='i8fn854n0_{$smarty.capture.i8fn854n0++|default:0}'>
-    {else}
-        </li>
-        {section name='close_tags' start=`$item_ivwdjagbc._level` loop=`$prev_level`}
-            </ul></li>
-        {/section}
-    {/if}
-{/if}
-{if $item_ivwdjagbc._level==1}
-<li class='hor-menu__item hor-menu__item--u-i6yla3d9e {if $page._left >= $item_ivwdjagbc._left && $page._right <= $item_ivwdjagbc._right && $page.menu_id == $item_ivwdjagbc.menu_id}is-current{/if}' id='i6yla3d9e_{$smarty.capture.i6yla3d9e++|default:0}'>
-<a {if $item_ivwdjagbc.blank} target='_blank'{/if}  {if !$item_ivwdjagbc.hide_url}href='{if $item_ivwdjagbc.page_id == $site.page_id}/{else}{$item_ivwdjagbc.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}'{/if} class='hor-menu__link hor-menu__link--u-ifvz2m8di' id='ifvz2m8di_{$smarty.capture.ifvz2m8di++|default:0}'>
-<span class='hor-menu__text hor-menu__text--u-i6z3xjrue' id='i6z3xjrue_{$smarty.capture.i6z3xjrue++|default:0}'>
-<span class='text-block-wrap-div' >{$item_ivwdjagbc.name}</span>
-</span>
-{if $has_child}<span class='hor-menu__icon hor-menu__icon--u-i1ezeq2yc' id='i1ezeq2yc_{$smarty.capture.i1ezeq2yc++|default:0}'></span>
-{/if}</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>   
+        <nav></nav>
+    </header>
+    <aside>
+        <nav></nav>
+    </aside>
+    <main>
+        <article>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </article>
+    </main>
+    <footer>
 
-
-{else}
-<li class='hor-menu__sub_item hor-menu__sub_item--u-i18qh14a5 {if $page._left >= $item_ivwdjagbc._left && $page._right <= $item_ivwdjagbc._right && $page.menu_id == $item_ivwdjagbc.menu_id}is-current{/if}' id='i18qh14a5_{$smarty.capture.i18qh14a5++|default:0}'>
-<a {if $item_ivwdjagbc.blank} target='_blank'{/if}  {if !$item_ivwdjagbc.hide_url}href='{if $item_ivwdjagbc.page_id == $site.page_id}/{else}{$item_ivwdjagbc.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}'{/if} class='hor-menu__sub_link hor-menu__sub_link--u-ify5qps5l' id='ify5qps5l_{$smarty.capture.ify5qps5l++|default:0}'>
-<span class='hor-menu__sub_text hor-menu__sub_text--u-i4i6wlvcg' id='i4i6wlvcg_{$smarty.capture.i4i6wlvcg++|default:0}'>
-<span class='text-block-wrap-div' >{$item_ivwdjagbc.name}</span>
-</span>
-{if $has_child}<span class='hor-menu__sub_icon hor-menu__sub_icon--u-i5usw4qte' id='i5usw4qte_{$smarty.capture.i5usw4qte++|default:0}'></span>
-{/if}</a>
-{if $has_child}<ul class='mosaic-irne0f409 mosaic-irne0f409--u-iyaeb9bew' id='iyaeb9bew_{$smarty.capture.iyaeb9bew++|default:0}'>
-{foreach from=$item_ivwdjagbc.sub item=item_i18qh14a5_1 key=key_i18qh14a5_1 name=item_i18qh14a5_0.sub}<li class='hor-menu__sub_item hor-menu__sub_item--u-i18qh14a5' id='i18qh14a5_{$smarty.capture.i18qh14a5++|default:0}'>
-<a {if $item_ivwdjagbc.blank} target='_blank'{/if}  {if !$item_i18qh14a5_1.hide_url}href='{if $item_i18qh14a5_1.page_id == $site.page_id}/{else}{$item_i18qh14a5_1.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}'{/if} class='hor-menu__sub_link hor-menu__sub_link--u-ify5qps5l' id='ify5qps5l_{$smarty.capture.ify5qps5l++|default:0}'>
-<span class='hor-menu__sub_text hor-menu__sub_text--u-i4i6wlvcg' id='i4i6wlvcg_{$smarty.capture.i4i6wlvcg++|default:0}'>
-<span class='text-block-wrap-div' >{$item_i18qh14a5_1.name}</span>
-</span>
-{if $has_child}<span class='hor-menu__sub_icon hor-menu__sub_icon--u-i5usw4qte' id='i5usw4qte_{$smarty.capture.i5usw4qte++|default:0}'></span>
-{/if}</a>
-{if $has_child}<ul class='mosaic-irne0f409 mosaic-irne0f409--u-iyaeb9bew' id='iyaeb9bew_{$smarty.capture.iyaeb9bew++|default:0}'>
-{foreach from=$item_i18qh14a5_1.sub item=item_i18qh14a5_2 key=key_i18qh14a5_2 name=item_i18qh14a5_1.sub}<li class='hor-menu__sub_item hor-menu__sub_item--u-i18qh14a5' id='i18qh14a5_{$smarty.capture.i18qh14a5++|default:0}'>
-<a {if $item_ivwdjagbc.blank} target='_blank'{/if}  {if !$item_i18qh14a5_2.hide_url}href='{if $item_i18qh14a5_2.page_id == $site.page_id}/{else}{$item_i18qh14a5_2.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}'{/if} class='hor-menu__sub_link hor-menu__sub_link--u-ify5qps5l' id='ify5qps5l_{$smarty.capture.ify5qps5l++|default:0}'>
-<span class='hor-menu__sub_text hor-menu__sub_text--u-i4i6wlvcg' id='i4i6wlvcg_{$smarty.capture.i4i6wlvcg++|default:0}'>
-<span class='text-block-wrap-div' >{$item_i18qh14a5_2.name}</span>
-</span>
-</a>
-
-{/foreach}</ul>
-{/if}
-{/foreach}</ul>
-{/if}
-
-{/if}
-{assign var='prev_level' value=`$item_ivwdjagbc._level`}
-{/foreach}
-</li></ul>
-{section name='close_tags' start=1 loop=`$prev_level`}
-            </li></ul>
-{/section}<ul class='hor-menu__more_list hor-menu__more_list--u-iz6cfhmiw' id='iz6cfhmiw_{$smarty.capture.iz6cfhmiw++|default:0}'>
-<li class='hor-menu__item hor-menu__item--u-idnvxvxue' id='idnvxvxue_{$smarty.capture.idnvxvxue++|default:0}'>
-<a href='#' class='hor-menu__more_link hor-menu__more_link--u-iun8o5h3m' id='iun8o5h3m_{$smarty.capture.iun8o5h3m++|default:0}'>
-<span class='hor-menu__text hor-menu__text--u-ie5oi3vyy' id='ie5oi3vyy_{$smarty.capture.ie5oi3vyy++|default:0}'>
-<span class='text-block-wrap-div' >...</span>
-</span>
-</a>
-<ul class='hor-menu__sub_list hor-menu__sub_list--u-isfqjprtn' id='isfqjprtn_{$smarty.capture.isfqjprtn++|default:0}'>
-{foreach from=$mc_ivwdjagbc.more item=item_ivwdjagbc key=key_ivwdjagbc name=mc_ivwdjagbc.more}<li class='hor-menu__sub_item hor-menu__sub_item--u-ieipct51a' id='ieipct51a_{$smarty.capture.ieipct51a++|default:0}'>
-<a href='{if $item_ivwdjagbc.page_id == $site.page_id}/{else}{$item_ivwdjagbc.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='hor-menu__sub_link hor-menu__sub_link--u-iwq76lao4' id='iwq76lao4_{$smarty.capture.iwq76lao4++|default:0}'>
-<span class='hor-menu__sub_text hor-menu__sub_text--u-ivqob2e61' id='ivqob2e61_{$smarty.capture.ivqob2e61++|default:0}'>
-<span class='text-block-wrap-div' >{$item_ivwdjagbc.name}</span>
-</span>
-{if $has_child}<span class='hor-menu__sub_icon hor-menu__sub_icon--u-i0qe5zadz' id='i0qe5zadz_{$smarty.capture.i0qe5zadz++|default:0}'></span>
-{/if}</a>
-{if $has_child}<ul class='hor-menu__sub_list hor-menu__sub_list--u-iw5gl6dlm' id='iw5gl6dlm_{$smarty.capture.iw5gl6dlm++|default:0}'>
-{foreach from=$item_ivwdjagbc.sub item=item_ifa3tt8wq_0 key=key_ifa3tt8wq_0 name=item_ivwdjagbc.sub}<li class='hor-menu__sub_item hor-menu__sub_item--u-ifa3tt8wq' id='ifa3tt8wq_{$smarty.capture.ifa3tt8wq++|default:0}'>
-<a href='{if $item_ifa3tt8wq_0.page_id == $site.page_id}/{else}{$item_ifa3tt8wq_0.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='hor-menu__sub_link hor-menu__sub_link--u-i32lpd9kz' id='i32lpd9kz_{$smarty.capture.i32lpd9kz++|default:0}'>
-<span class='hor-menu__sub_text hor-menu__sub_text--u-iwjfdbr3h' id='iwjfdbr3h_{$smarty.capture.iwjfdbr3h++|default:0}'>
-<span class='text-block-wrap-div' >{$item_ifa3tt8wq_0.name}</span>
-</span>
-{if $has_child}<span class='hor-menu__sub_icon hor-menu__sub_icon--u-ifl5axh14' id='ifl5axh14_{$smarty.capture.ifl5axh14++|default:0}'></span>
-{/if}</a>
-{if $has_child}<ul class='mosaic-ifsrf3qm4 mosaic-ifsrf3qm4--u-iw85m5l0b' id='iw85m5l0b_{$smarty.capture.iw85m5l0b++|default:0}'>
-{foreach from=$item_ifa3tt8wq_0.sub item=item_ifa3tt8wq_1 key=key_ifa3tt8wq_1 name=item_ifa3tt8wq_0.sub}<li class='hor-menu__sub_item hor-menu__sub_item--u-ifa3tt8wq' id='ifa3tt8wq_{$smarty.capture.ifa3tt8wq++|default:0}'>
-<a href='{if $item_ifa3tt8wq_1.page_id == $site.page_id}/{else}{$item_ifa3tt8wq_1.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='hor-menu__sub_link hor-menu__sub_link--u-i32lpd9kz' id='i32lpd9kz_{$smarty.capture.i32lpd9kz++|default:0}'>
-<span class='hor-menu__sub_text hor-menu__sub_text--u-iwjfdbr3h' id='iwjfdbr3h_{$smarty.capture.iwjfdbr3h++|default:0}'>
-<span class='text-block-wrap-div' >{$item_ifa3tt8wq_1.name}</span>
-</span>
-{if $has_child}<span class='hor-menu__sub_icon hor-menu__sub_icon--u-ifl5axh14' id='ifl5axh14_{$smarty.capture.ifl5axh14++|default:0}'></span>
-{/if}</a>
-{if $has_child}<ul class='mosaic-ifsrf3qm4 mosaic-ifsrf3qm4--u-iw85m5l0b' id='iw85m5l0b_{$smarty.capture.iw85m5l0b++|default:0}'>
-{foreach from=$item_ifa3tt8wq_1.sub item=item_ifa3tt8wq_2 key=key_ifa3tt8wq_2 name=item_ifa3tt8wq_1.sub}<li class='hor-menu__sub_item hor-menu__sub_item--u-ifa3tt8wq' id='ifa3tt8wq_{$smarty.capture.ifa3tt8wq++|default:0}'>
-<a href='{if $item_ifa3tt8wq_2.page_id == $site.page_id}/{else}{$item_ifa3tt8wq_2.url|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='hor-menu__sub_link hor-menu__sub_link--u-i32lpd9kz' id='i32lpd9kz_{$smarty.capture.i32lpd9kz++|default:0}'>
-<span class='hor-menu__sub_text hor-menu__sub_text--u-iwjfdbr3h' id='iwjfdbr3h_{$smarty.capture.iwjfdbr3h++|default:0}'>
-<span class='text-block-wrap-div' >{$item_ifa3tt8wq_2.name}</span>
-</span>
-</a>
-</li>
-{/foreach}</ul>
-{/if}</li>
-{/foreach}</ul>
-{/if}</li>
-{/foreach}</ul>
-{/if}</li>
-{/foreach}</ul>
-</li>
-</ul>
-</div>
-{/if}</div>
-<div data-do-animation='{literal}[{"medias":["screen"],"event":"onScrollIntoView","animation":{"name":"bounceInDown","duration":1,"delay":0,"infinite":false,"loop":false}}]{/literal}' class='dropdown dropdown--u-iyhog3uq8' id='iyhog3uq8_{$smarty.capture.iyhog3uq8++|default:0}' data-do-dropdown='{literal}{"screen":{"event":"hover","effect":"toggle","duration":"400","direction":"down","horizontalAlignment":"right","verticalAlignment":"top"},"(max-width: 767px)":{"horizontalAlignment":"center"}}{/literal}'>
-<div class='dropdown__wrapper dropdown__wrapper--u-iz5meomf1' id='iz5meomf1_{$smarty.capture.iz5meomf1++|default:0}'>
-<button type='button' aria-haspopup='true' aria-expanded='false' class='dropdown__button dropdown__button--u-i713yiau9' id='i713yiau9_{$smarty.capture.i713yiau9++|default:0}'>
-<div class='text text--u-icq95cfuv' id='icq95cfuv_{$smarty.capture.icq95cfuv++|default:0}'>
-<span class='text-block-wrap-div' >{$mc_iyhog3uq8.text5}</span>
-</div>
-<span class='svg_image svg_image--u-imttjahgz' id='imttjahgz_{$smarty.capture.imttjahgz++|default:0}' data-do-svg_image='{literal}{"screen":{"stretch":true}}{/literal}'>
-{$mc_iyhog3uq8.svg_body}
-</span>
-</button>
-<div class='dropdown__content-wrapper dropdown__content-wrapper--u-iwo2v4tv9' id='iwo2v4tv9_{$smarty.capture.iwo2v4tv9++|default:0}'>
-<div class='dropdown__content dropdown__content--u-i41ezxrpe' id='i41ezxrpe_{$smarty.capture.i41ezxrpe++|default:0}'>
-<div class='div div--u-i4ym4t54s' id='i4ym4t54s_{$smarty.capture.i4ym4t54s++|default:0}'>
-{if false}<div class='text text--u-i155gyh1k' id='i155gyh1k_{$smarty.capture.i155gyh1k++|default:0}'>
-<span class='text-block-wrap-div' >{$mc_iyhog3uq8.text1}</span>
-</div>
-{/if}<div class='list list--u-inwdfof7u' id='inwdfof7u_{$smarty.capture.inwdfof7u++|default:0}'>
-{foreach from=$mc_iyhog3uq8.list item=item_iyhog3uq8 key=key_iyhog3uq8 name=mc_iyhog3uq8.list}<div class='list__item list__item--u-ie4y2d5zh' id='ie4y2d5zh_{$smarty.capture.ie4y2d5zh++|default:0}'>
-<a target='_self' href='{$item_iyhog3uq8.href.phone|replace:" ":""}' class='link-universal link-universal--u-i9uhg1e7f' id='i9uhg1e7f_{$smarty.capture.i9uhg1e7f++|default:0}' data-do-link_universal='{literal}{"screen":{"type":"link","popup":"none","eventName":"none","eventElement":"self","eventAction":"","selectedTag":"","linkType":"phone","blank":false}}{/literal}'>
-<div class='text text--u-ixfwfqkrq' id='ixfwfqkrq_{$smarty.capture.ixfwfqkrq++|default:0}'>
-<span class='text-block-wrap-div' >{$item_iyhog3uq8.text}</span>
-</div>
-</a>
-</div>
-{/foreach}</div>
-<div class='text text--u-i8pb7wcj4' id='i8pb7wcj4_{$smarty.capture.i8pb7wcj4++|default:0}'>
-<span class='text-block-wrap-div' >{$mc_iyhog3uq8.text3}</span>
-</div>
-<div role='button' class='link-universal link-universal--u-i9ul7h6bp' id='i9ul7h6bp_{$smarty.capture.i9ul7h6bp++|default:0}' data-do-link_universal='{literal}{"screen":{"type":"button","popup":"irkevhiwi_0","sidepanel":false,"eventName":"none","eventElement":"self","eventAction":"","selectedTag":"","linkType":"link","blank":false}}{/literal}'>
-<div class='text text--u-i58jjpkku' id='i58jjpkku_{$smarty.capture.i58jjpkku++|default:0}'>
-<span class='text-block-wrap-div' >{$mc_iyhog3uq8.text2}</span>
-</div>
-</div>
-</div>
-{if false}<a href='{if $mc_iyhog3uq8.page_id == $site.page_id}/{else}{$mc_iyhog3uq8.href1.link|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='link-universal link-universal--u-ila95zkbs' id='ila95zkbs_{$smarty.capture.ila95zkbs++|default:0}' data-do-link_universal='{literal}{"screen":{"type":"link","popup":"","sidepanel":false,"eventName":"none","eventElement":"self","eventAction":"","selectedTag":"","linkType":"link","blank":false}}{/literal}'>
-<div class='text text--u-iqvd1pqe2' id='iqvd1pqe2_{$smarty.capture.iqvd1pqe2++|default:0}'>
-<span class='text-block-wrap-div' >{$mc_iyhog3uq8.text4}</span>
-</div>
-</a>
-{/if}<div class='div div--u-ilqvczbyr' id='ilqvczbyr_{$smarty.capture.ilqvczbyr++|default:0}'>
-<div class='list list--u-iyxntu4ml' id='iyxntu4ml_{$smarty.capture.iyxntu4ml++|default:0}'>
-{foreach from=$mc_iyhog3uq8.list1 item=item_iyhog3uq8 key=key_iyhog3uq8 name=mc_iyhog3uq8.list1}<div class='list__item list__item--u-ilzrn4cga' id='ilzrn4cga_{$smarty.capture.ilzrn4cga++|default:0}'>
-<a href='{if $item_iyhog3uq8.page_id == $site.page_id}/{else}{$item_iyhog3uq8.href.link|replace:" ":""}{if $site.reg.seo.trailing_slash == 1}/{/if}{/if}' class='link-universal link-universal--u-id35sycup' id='id35sycup_{$smarty.capture.id35sycup++|default:0}' data-do-link_universal='{literal}{"screen":{"type":"link","popup":"none","eventName":"none","eventElement":"self","eventAction":"","selectedTag":"","linkType":"link","blank":false}}{/literal}'>
-{if false}<div class='imageFit imageFit--u-ium1hi5rh' id='ium1hi5rh_{$smarty.capture.ium1hi5rh++|default:0}' data-do-image='{literal}{"screen":{"objectFit":"cover","lockRatio":true}}{/literal}'>
-<img data-origin-src='{if $item_iyhog3uq8.image.ext == "gif"}{$item_iyhog3uq8.image.src}{else}{s3_img src=$item_iyhog3uq8.image.filename}{/if}' data-size='{$item_iyhog3uq8.image.image_width}x{$item_iyhog3uq8.image.image_height}' src='{if $item_iyhog3uq8.image.ext == "gif"}{$item_iyhog3uq8.image.src}{else}{s3_img src=$item_iyhog3uq8.image.filename width="640" height="480" method="resize"}{/if}' alt='{$item_iyhog3uq8.alt}' title='{$item_iyhog3uq8.title}' class='imageFit__img imageFit__img--u-iqtas8wjx' id='iqtas8wjx_{$smarty.capture.iqtas8wjx++|default:0}' />
-<div class='imageFit__overlay imageFit__overlay--u-i4b6yftna' id='i4b6yftna_{$smarty.capture.i4b6yftna++|default:0}'></div>
-<div class='imageFit__zoom imageFit__zoom--u-ig9m9kwe6' id='ig9m9kwe6_{$smarty.capture.ig9m9kwe6++|default:0}'>
-<span class='svg_image svg_image--u-im2m0htu2' id='im2m0htu2_{$smarty.capture.im2m0htu2++|default:0}' data-do-svg_image='{literal}{"screen":{"stretch":true}}{/literal}'>
-{$item_iyhog3uq8.svg_body}
-</span>
-</div>
-</div>
-{/if}<span class='svg_image svg_image--u-ibk2k5f5f' id='ibk2k5f5f_{$smarty.capture.ibk2k5f5f++|default:0}' data-do-svg_image='{literal}{"screen":{"stretch":true}}{/literal}'>
-{$item_iyhog3uq8.svg_body1}
-</span>
-</a>
-</div>
-{/foreach}</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    </footer>    
+</body>
+</html>
